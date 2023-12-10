@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Number sign checker</h1>
+    Enter a number: <input type="text" id="f1">
+    <button onclick="best()">Press</button>
+    <p id="s1"></p>
+    <script>
+
+        function best(){ 
+
+        var number = document.getElementById("f1").value;
+        if(number>0){
+            s1 = `${number} is postive number`;
+        }else if(number==0){
+            s1 = `${number} is zero`;
+        }else if(number<0){
+            s1 = `${number} is negitive number`;
+    }
+    document.getElementById("s1").innerText = s1;
+}
+    </script>
+</body>
+</html>
